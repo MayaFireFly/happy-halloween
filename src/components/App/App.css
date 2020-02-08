@@ -1,0 +1,15 @@
+.wrapper{   
+  display:inline-block;  
+  min-height: 90vh;
+  width: 100%;
+  color: azure;
+  background: url("/img/header.png") no-repeat 50% 3% fixed,
+    url("/img/background.png") no-repeat 50% 75% fixed;    
+}
+@media (max-width: 698px){
+  .wrapper{
+    position: relative;
+    top: 0;
+    width:100%;
+  }
+}
