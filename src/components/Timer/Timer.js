@@ -16,20 +16,34 @@ const Timer = (props) => {
         const then = moment(timeTillDate);
         const now = moment();
         const countdown = moment(then - now);
-        setDays(countdown.format('D'));
-        setHours(countdown.format('HH'));
-        setMinutes(countdown.format('mm'));
-        setSeconds(countdown.format('ss'));    
+        if(countdown.isValid()){
+          setDays(countdown.format('D'));
+          setHours(countdown.format('HH'));
+          setMinutes(countdown.format('mm'));
+          setSeconds(countdown.format('ss'));
+        }            
       }, 1000);     
     }    
   );
 
   return <div>
     <div className='countdown-wrapper'>
-      <div className='countdown-item'>{days}</div>
-      <div className='countdown-item'>{hours}</div>
-      <div className='countdown-item'>{minutes}</div>
-      <div className='countdown-item'>{seconds}</div>
+      <div className='countdown-item'>
+        {days}
+        <span>дней</span>
+      </div>
+      <div className='countdown-item'>
+        :{hours}
+        <span>часов</span>
+      </div>
+      <div className='countdown-item'>
+        :{minutes}
+        <span>минут</span>
+      </div>
+      <div className='countdown-item'>
+        :{seconds}
+        <span>секунд</span>
+      </div>
     </div>    
   </div>;
 };

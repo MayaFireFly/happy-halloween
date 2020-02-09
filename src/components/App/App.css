@@ -1,10 +1,13 @@
 .wrapper{   
   display:inline-block;  
-  min-height: 90vh;
+  min-height: 95vh;
   width: 100%;
   color: azure;
   background: url("/img/header.png") no-repeat 50% 3% fixed,
     url("/img/background.png") no-repeat 50% 75% fixed;    
+}
+.row-timer{
+  margin-top: 16vh;
 }
 @media (max-width: 698px){
   .wrapper{

@@ -36,9 +36,11 @@ body{
     flex-direction: row;
     flex-wrap: wrap; 
     width: 100%;
+    align-items: center;
+    justify-content: center;
 }
 #root{
-    text-align: center;
+    text-align: center;    
 }
 @media (max-width: 698px){
     .background-img-screen{

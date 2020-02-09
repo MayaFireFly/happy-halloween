@@ -1,6 +1,24 @@
-.countdown-wrapper{
-
+.countdown-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
 }
-.countdown-item{
-    
+
+.countdown-item {  
+  font-size: 1.5em;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;  
+  position: relative;  
+  width: 1.8em;  
+  padding-top: 1em;
+  font-weight: 600;
+  padding: auto 0;
+}
+
+.countdown-item span {  
+  font-size: .4em;
+  font-weight: normal;  
 }

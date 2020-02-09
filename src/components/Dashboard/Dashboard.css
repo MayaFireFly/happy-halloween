@@ -1,3 +1,80 @@
 .dash-wrapper{  
-  
+  color:black;
+  font-weight: bolder; 
+  margin-top: 1em;    
+}
+.task-wrapper{  
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  height: 20vh;
+  margin: 0;
+  padding: 0;
+  margin-top: -.3em;
+}
+.task-img,
+.task-text,
+.task-btn{
+  display: flex;
+  flex-direction: column;   
+  justify-content: center;  
+}
+.task-img{
+  width:10em;  
+  align-items: center; 
+}
+.task-img > img{
+  width: 50%;
+  height: auto;
+  transform: rotate(18deg);
+}
+.task-text{
+  text-align: left;
+  width:20em; 
+  align-items:flex-start;    
+}
+.task-text > progress{
+	display:inline-block;
+	width:25em;
+	height:1.5em;
+	padding:15px 0 0 0;
+	margin:0;
+	background:none;
+	border: 0;
+	border-radius: 15px;
+	text-align: left;
+	position:relative;
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 0.8em;
+}
+.task-text > progress::-webkit-progress-bar {
+	height:1.5em;
+	width:25em;
+	margin:0 auto;
+	background-color: white;
+	border-radius: 15px;
+	box-shadow:0px 0px 6px white inset, 2px 2px white inset, -2px -2px white inset;
+}
+.task-text > progress::-webkit-progress-value {
+	display:inline-block;	
+	height:1.5em;
+	margin:0;
+	background: rgb(143, 160, 81);
+	border-radius: 15px;
+	box-shadow:0px 0px 6px white inset, 2px 2px white inset, -2px -2px white inset;
+}
+.task-btn{ 
+  width:10em; 
+  align-items:flex-end;       
+}
+.task-btn > button{
+  background-color: #EBD566;
+  border: 2px solid #3D3301;
+  border-radius: 4px;
+  color:#3D3301;
+  height: 2em;
+  font-weight:500;
+  position: relative;
+  top: 3em;
 }
