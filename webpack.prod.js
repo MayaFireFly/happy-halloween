@@ -5,7 +5,7 @@ module.exports = {
   mode:'production',
   devtool:'source-map',
   output:{
-    path:__dirname + '/dist',
+    path: __dirname + '/dist',
     publicPath:'/',
     filename:'[name].[contenthash].js'            
   },

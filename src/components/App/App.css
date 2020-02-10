@@ -7,12 +7,17 @@
     url("/img/background.png") no-repeat 50% 75% fixed;    
 }
 .row-timer{
-  margin-top: 16vh;
+  margin-top: 16vh;  
 }
 @media (max-width: 698px){
   .wrapper{
     position: relative;
     top: 0;
     width:100%;
+  }
+  .row-timer{
+    position: relative;
+    top:0;
+    left:25%;     
   }
 }

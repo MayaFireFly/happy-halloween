@@ -49,4 +49,15 @@ body{
         -o-background-size: cover;
         background-size: cover;
     }
+    .row{
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: flex-start;
+        padding-left:4em;       
+    }
+}
+@media (max-width: 530px){
+    .row{
+        padding: 0;
+    } 
 }

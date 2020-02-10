@@ -4,10 +4,10 @@ import moment from 'moment';
 import PropTypes from 'prop-types';
 
 const Timer = (props) => {
-  const [days, setDays] = useState('');
-  const [hours, setHours] = useState('');
-  const [minutes, setMinutes] = useState('');
-  const [seconds, setSeconds] = useState('');
+  const [days, setDays] = useState('00');
+  const [hours, setHours] = useState('00');
+  const [minutes, setMinutes] = useState('00');
+  const [seconds, setSeconds] = useState('00');
   const timeTillDate = props.timeTillDate; 
 
   useEffect(

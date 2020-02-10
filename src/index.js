@@ -10,4 +10,4 @@ ReactDOM.render(
   document.getElementById('root')
 );
 
-module.hot.accept();		//development mode only
+//module.hot.accept();		//development mode only
